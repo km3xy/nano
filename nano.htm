@@ -1,0 +1,122 @@
+GNU nano 是 Linux / Termux 里最简单的文本编辑器之一，非常适合你在 Termux 里写脚本（比如 Node.js、PHP 等）。
+下面是 最实用的 nano 使用方法 👇
+一、打开或创建文件
+Bash
+复制代码
+nano 文件名
+例如：
+Bash
+复制代码
+nano test.js
+作用：
+如果文件存在 → 打开编辑
+如果文件不存在 → 自动创建
+二、编辑内容
+打开后你就可以 直接输入文字。
+例如写 Node.js：
+复制代码
+
+console.log("Hello World");
+nano 不需要进入“编辑模式”，打开就可以直接输入。
+三、保存文件
+按：
+复制代码
+
+Ctrl + O
+屏幕下面会显示：
+复制代码
+
+File Name to Write: test.js
+然后按：
+复制代码
+
+Enter
+就保存成功。
+四、退出 nano
+按：
+复制代码
+
+Ctrl + X
+如果修改过文件，会提示：
+复制代码
+
+Save modified buffer?
+Y Yes
+N No
+按：
+复制代码
+
+Y
+然后 Enter。
+五、删除一行
+把光标放在那一行：
+复制代码
+
+Ctrl + K
+整行删除。
+六、复制一行
+复制代码
+
+Alt + 6
+七、粘贴
+复制代码
+
+Ctrl + U
+八、搜索文字
+复制代码
+
+Ctrl + W
+输入要搜索的内容：
+复制代码
+
+console
+然后 Enter。
+九、跳到指定行
+复制代码
+
+Ctrl + _
+输入行号：
+复制代码
+
+20
+十、Termux手机快捷键
+手机没有键盘时：
+长按 Termux屏幕 → 打开菜单 → Keyboard
+或者用：
+复制代码
+
+音量下 + 字母
+例如：
+复制代码
+
+音量下 + O  = Ctrl + O
+音量下 + X  = Ctrl + X
+音量下 + K  = Ctrl + K
+一个完整示例
+创建 Node.js 文件：
+Bash
+复制代码
+nano test.js
+输入：
+复制代码
+
+console.log("Termux Node.js OK");
+保存：
+复制代码
+
+Ctrl + O
+Enter
+Ctrl + X
+运行：
+Bash
+复制代码
+node test.js
+输出：
+复制代码
+
+Termux Node.js OK
+如果你愿意，我可以再教你 3个Termux最常用编辑技巧：
+1️⃣ nano 快速写 1000 行代码
+2️⃣ nano 自动补全
+3️⃣ nano 一键运行脚本
+学会后 手机写程序速度会快 5 倍。
